@@ -1,1 +1,1 @@
-shared_prefrenece_deo=mo
+shared_prefrenece_deomo

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 if(check){
                     //for True (User is Logged In)
                     iMext=new Intent(MainActivity.this, home.class);
+                    Toast.makeText(MainActivity.this, "complete", Toast.LENGTH_SHORT).show();
                 }else {
                     //for Flase (User is first opening  or if logout)
                     iMext=new Intent(MainActivity.this, login.class);
